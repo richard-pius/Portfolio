@@ -1,24 +1,78 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <link rel="icon" href="D:\Code\Portfolio\source\Tab icon.png">
-    <title>
-        Portfolio
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<h1 align = "center">
-    Welcome to my Portfolio website!
-</h1>
-<br>
 <body>
-This website is still development in progress!
-Thing to do in this website : 
-<ol>
-    <li>add content and make the website beautifull</li>
-    <li>add page and contact details</li>
-    <li>add a page on completed and working project and maybe a blog!</li>
-    <li>fix error and host the website</li>
-</ol>
-Let's try our best!
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna
+sed, convallis vel est.</p>
+        <ul>
+            <li>Full Stack Developer</li>
+            <li>Expert in HTML, CSS, JavaScript, and React</li>
+            <li>Passionate about creating innovative and user-friendly solutions</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project-1.png" alt="Project 1">
+                <h2>Project 1: Todo List App</h2>
+                <p>A simple Todo List app built with React and JavaScript.</p>
+                <button>View Live Demo</button>
+            </div>
+            <div class="project-card">
+                <img src="project-2.png" alt="Project 2">
+                <h2>Project 2: Weather App</h2>
+                <p>A weather app built with JavaScript and the OpenWeatherMap API.</p>
+                <button>View Live Demo</button>
+            </div>
+            <!-- Add more project cards here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea name="message" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2023 Personal Portfolio Website</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
